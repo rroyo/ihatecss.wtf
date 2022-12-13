@@ -4,6 +4,9 @@
 :root {
     --title: hsl(263, 48%, 39%);
     --subtitle: hsl(0, 0%, 20%);
+    --wtf: hsla(68, 36%, 48%, .7);
+    --wtf-span: hsl(63, 55%, 33%);
+    --wtf-for: hsl(0, 9%, 89%);
     --regular: hsl(0, 0%, 20%);
     --background-main: hsla(269, 18%, 45%, 0.425);
 }
@@ -21,15 +24,14 @@ html {
 
 body {
     font-family: 'lato', sans-serif;
+    height: 2000px;
 }
 
 .wrapper {    
     width: 900px;
-    margin: 0  auto;
-}
-
-header {
-    padding: 50px 0;    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
 }
 
 .main-content {
@@ -54,12 +56,35 @@ h2 {
     text-align: center;
 }
 
-.subtitle {
+.wtf {    
+    font-family: 'kanit', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    color: var(--wtf);
+    max-width: min-content;
+    position: relative;
+    left: 770px;
+    top: 100px;
+    transform: rotate(25deg);
+    letter-spacing: 1px;
+    -webkit-text-stroke: 1px black;
+}
 
+.wtf span {
+    color: var(--wtf-span);
+}
+
+#wtf-for {
+    color: var(--wtf-for);
+    position: absolute;
+    left: -40px;
+    bottom: 13px;
+    transform: rotate(-90deg);
+    letter-spacing: 2px;
 }
 
 p {
-    font-size: 1.5rem;;
+    font-size: 1.5rem;    
     line-height: 1.8rem;
     color: var(--regular);
 }
